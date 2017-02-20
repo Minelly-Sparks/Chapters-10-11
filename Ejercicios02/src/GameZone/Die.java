@@ -2,17 +2,13 @@ package GameZone;
 import java.util.Random;
 public class Die {
     private Integer numerito;
-    
-    public Die(){
-        lanzar();    
-    }
-    public void lanzar(){
-        Random rm = new Random();
-        int numerito=rm.nextInt(6)+1;     
-    }
+  
     public Integer getNumerito(){
         return numerito;
     }        
-   
+   public static void mostrar(){
+       Integer num=((int)(Math.random()*100 %6+1));
+       System.out.println(num);
+   }
 }
 
